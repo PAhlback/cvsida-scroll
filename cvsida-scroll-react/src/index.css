@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/******************** INTRODUCTION **********************/
+.hero-image {
+  height: 100vh;
+  background-image: url('./assets/images/PontusAhlbckHandelslunchkonsert2.jpg');
+  background-size: cover;
+  background-repeat: none;
+}
+
+.introduction {
+  color: white;
+  padding-top: 70vh;
+  padding-left: 10vw;
+  font-family: inter;
+}
+.introduction h1 {
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px black;
+  font-weight: 600;
+}
+.introduction p {
+  width: 21vw;
+  font-size: 1rem;
+  text-shadow: 1px 1px 2px black;
+}
+.scroll-down-arrow{
+  color: white;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+}
+
+/******************** ABOUT **********************/
+.about-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 20%;
+  font-family: inter;
+}
+.about-text {
+  margin-right: 10%;
+}
+.about-text h2 {
+  text-align: center;
+  padding-bottom: 2rem;
+  font-weight: 400;
+  font-size: 2rem;
+}
+.about-text p {
+  line-height: 1.8;
+}
+.about-picture {
+  max-height: 100%;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
