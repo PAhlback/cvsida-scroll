@@ -14,7 +14,7 @@ const Header = () => {
                     <li>LINKS</li>
                 </ul>
             </nav>
-            <div className='hamburger'><h2>H</h2></div>
+            <div className='hamburger'><h3>H</h3></div>
         </header>
     </>
   )

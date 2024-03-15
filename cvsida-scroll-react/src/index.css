@@ -19,6 +19,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/******************** GENERAL **********************/
+h2 {
+  text-align: center;
+  padding-bottom: 2rem;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
 /******************** INTRODUCTION **********************/
 .hero-image {
   height: 100vh;
@@ -63,12 +71,7 @@
 .about-text {
   margin-right: 10%;
 }
-.about-text h2 {
-  text-align: center;
-  padding-bottom: 2rem;
-  font-weight: 400;
-  font-size: 2rem;
-}
+
 .about-text p {
   line-height: 1.8;
 }
