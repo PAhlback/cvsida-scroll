@@ -27,9 +27,34 @@ h2 {
   font-size: 2rem;
 }
 
+.full-resume-button {
+  margin: 1rem;
+  display: flex;
+  padding: 1.5rem 2.5rem;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 25px;
+  background: linear-gradient(92deg, #0697FF 14.21%, #00D13B 99.74%);
+  box-shadow: 3px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.full-resume-button:hover {
+  background: linear-gradient(92deg, #0697FF 50%, #00D13B 99.74%);
+}
+.full-resume-button h6 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.full-resume-button:hover h6 {
+  font-weight: 600;
+}
+.full-resume-button:active {
+  background: linear-gradient(92deg, #00D13B 15%, #0697FF 70%);
+}
+
 /******************** INTRODUCTION **********************/
 .hero-image {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url('./assets/images/PontusAhlbckHandelslunchkonsert2.jpg');
   background-size: cover;
   background-repeat: none;
@@ -60,7 +85,7 @@ h2 {
 
 /******************** ABOUT **********************/
 .about-wrapper {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -76,8 +101,29 @@ h2 {
   line-height: 1.8;
 }
 .about-picture {
-  max-height: 100%;
+  max-height: 80vh;
 }
+
+/******************** RESUMÉ **********************/
+.resume {
+  display: flex;
+  flex-flow: wrap column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 5% 0;
+  background-color: #e9e9e9;
+}
+
+.work-experience {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+}
+
+
+
+
+
 
 @media (prefers-color-scheme: light) {
   :root {
