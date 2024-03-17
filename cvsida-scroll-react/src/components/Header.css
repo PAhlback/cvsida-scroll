@@ -1,4 +1,4 @@
-header {
+.page-header {
     position: absolute;
     display: flex;
     top: 1rem;
@@ -8,13 +8,13 @@ header {
     color: white;
 }
 
-ul {
+.page-header ul {
     list-style-type: none;
     display: flex;
 
 }
 
-li {
+.page-header li {
     padding: 0 1rem;
     text-shadow: 1px 1px 2px black;
 }

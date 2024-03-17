@@ -1,11 +1,8 @@
 .experience-card {
-    max-width: 20%;
-    padding: 1rem 1.5rem 2rem;
-    box-shadow: 2px 2px 4px rgb(114, 114, 114);
-    background-color: #333;
-    color: white;
+    max-width: 60%;
+    padding: 1rem 1.5rem 0;
+    color: black;
     margin: 1rem 1rem;
-    border-radius: 8px;
 }
 
 .exp-head {
@@ -16,9 +13,9 @@
     font-weight: 400;
 }
 
-/* .exp-desc {
-
-} */
+.exp-desc {
+    border-top: 1px solid black;
+}
 
 .exp-list {
     display: flex;
@@ -27,4 +24,19 @@
     padding: 0.5rem;
     padding-left: 1rem;
     font-size: 0.9rem;
+}
+
+.program-name {
+    font-size: 1rem;
+
+}
+.program-dur {
+    font-size: 0.9rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.education-card {
+    max-width: 70%;
 }

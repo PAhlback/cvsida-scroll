@@ -116,11 +116,17 @@ h2 {
 
 .work-experience {
   display: flex;
-  flex-flow: wrap row;
-  justify-content: center;
+  flex-flow: wrap column;
+  align-items: center;
 }
 
-
+/* EDUCATION */
+.education {
+  background-color: white;
+}
+/* .education-cards {
+  
+} */
 
 
 
