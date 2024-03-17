@@ -1,5 +1,5 @@
 .page-header {
-    position: absolute;
+    position: fixed;
     display: flex;
     top: 1rem;
     right: 2.5rem;
@@ -8,18 +8,30 @@
     color: white;
 }
 
-.page-header ul {
+.navbar ul {
     list-style-type: none;
     display: flex;
-
 }
-
-.page-header li {
+.navbar li {
     padding: 0 1rem;
     text-shadow: 1px 1px 2px black;
+}
+.navbar li a {
+    text-decoration: none;
 }
 
 .hamburger {
     padding-left: 1rem;
-    text-shadow: 1px 1px 2px black;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+}
+
+.scroll-link {
+    color: white;
+}
+.scroll-link:hover {
+    color: #0697FF;
+}
+.scroll-link:active {
+    color: #004b81;
 }

@@ -3,7 +3,7 @@ import React from 'react'
 import Introduction from '../components/Introduction'
 import About from '../components/About'
 import Resume from '../components/Resume'
-import ExperienceCard from '../components/ExperienceCard'
+import Projects from '../components/Projects'
 
 const HomePage = () => {
   return (
@@ -11,6 +11,7 @@ const HomePage = () => {
         <Introduction />
         <About />
         <Resume />
+        <Projects />
     </>
   )
 }

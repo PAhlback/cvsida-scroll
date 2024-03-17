@@ -3,7 +3,7 @@ import Picture from '../assets/images/PontusAhlbäckHandelsLunchkonsert3.jpg'
 
 const About = () => {
     return (
-        <section className='about-wrapper'>
+        <section id="about" className='about-wrapper'>
             <article className='about-text'>
                 <h2>ABOUT ME</h2>
                 <p>

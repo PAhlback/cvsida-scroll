@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import Layout from './pages/Layout'
 import HomePage from './pages/HomePage'
+import FullResumePage from './pages/FullResumePage'
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<HomePage />} />
-            {/* <Route path="resume" element={<ResumePage />} /> */}
+            <Route path="resume" element={<FullResumePage />} />
           </Route>
         </Routes>
       </BrowserRouter>
