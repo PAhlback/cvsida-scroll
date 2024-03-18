@@ -15,7 +15,7 @@ const FullResumePage = () => {
             <p>
               This is my full resume. If you wish to download the resume click the button below.
             </p>
-            <button className='full-resume-button'><a href="resume"><h6>Download resumé</h6></a></button>
+            <a href="resume" className='full-resume-button'><h6>Download resumé</h6></a>
           </div>
         </article>
       </section>

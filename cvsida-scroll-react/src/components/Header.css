@@ -3,10 +3,14 @@
     display: flex;
     top: 1rem;
     right: 2.5rem;
+    padding-right: 1rem;
     align-items: center;
     font-family: inter;
     color: white;
     height: 3rem;
+    border-radius: 10px;
+    background-color: #222;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.678);
 }
 
 .navbar ul {
@@ -15,20 +19,21 @@
 }
 .navbar li {
     padding: 0 1rem;
-    text-shadow: 2px 2px 2px black;
 }
 .navbar li a {
     text-decoration: none;
 }
 
-.hamburger {
+.menuToggle {
     padding-left: 1rem;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 1.5rem;
 }
 
-.primary-nav {
+.primary-nav,
+.secondary-nav {
     justify-content: center;
+    align-items: center;
     padding-bottom: 0.5rem;
 }
 .primary-nav .navlink {
@@ -39,8 +44,8 @@
 .navbar-separator {
     border: 1px solid white;
     margin: 0.2rem;
+    padding-bottom: 0.5rem;
 }
-
 
 .scroll-link {
     color: white;

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaAlignJustify } from "react-icons/fa6";
+import { FaAlignJustify, FaAnglesUp } from "react-icons/fa6";
 import { NavLink, useLocation } from 'react-router-dom';
 import { Link } from 'react-scroll';
 
@@ -16,7 +16,7 @@ const Header = () => {
   };
 
   useEffect(() => {
-    if (location.pathname === homeRoute){
+    if (location.pathname === homeRoute) {
       setHomeOpen(true);
     } else {
       setHomeOpen(false);
@@ -25,23 +25,26 @@ const Header = () => {
 
   return (
     <>
-        <header className='page-header'>
-            <nav className='navbar' style={{display: `${hamburgerOpen ? 'inline' : 'none'}`}}>
-                <ul className='primary-nav'>
-                    <li><NavLink to="/" className='navlink'>HOME</NavLink></li>
-                    <li><NavLink to="resume" className='navlink'>FULL RESUMÉ</NavLink></li>
-                </ul>
-                <div className='navbar-separator' style={{display: `${homeOpen ? 'block' : 'none'}`}}></div>
-                <ul className='secondary-nav' style={{display: `${homeOpen ? 'flex' : 'none'}`}}>
-                  <li><Link to="about" smooth duration={500} className='scroll-link'>ABOUT</Link></li>
-                  <li><Link to="resume" smooth duration={500} className='scroll-link'>RESUMÉ</Link></li>
-                  <li><Link to="projects" smooth duration={500} className='scroll-link'>PROJECTS</Link></li>
-                  <li><Link to="footer" smooth duration={500} className='scroll-link'>LINKS</Link></li>
-                </ul>
-            </nav>
-            
-            <div className='hamburger' onClick={ toggleHamburger }><FaAlignJustify /></div>
-        </header>
+      <header className='page-header'>
+        <nav className='navbar' style={{ display: `${hamburgerOpen ? 'flex' : 'none'}` }}>
+          <ul className='secondary-nav' style={{ display: `${homeOpen ? 'flex' : 'none'}` }}>
+            <li><Link to="home" smooth duration={500} className='scroll-link'><FaAnglesUp /></Link></li>
+            <li><Link to="about" smooth duration={500} className='scroll-link' onClick={toggleHamburger}>ABOUT</Link></li>
+            <li><Link to="resume" smooth duration={500} className='scroll-link' onClick={toggleHamburger}>RESUMÉ</Link></li>
+            <li><Link to="projects" smooth duration={500} className='scroll-link' onClick={toggleHamburger}>PROJECTS</Link></li>
+            <li><Link to="footer" smooth duration={500} className='scroll-link' onClick={toggleHamburger}>LINKS</Link></li>
+          </ul>
+
+          <div className='navbar-separator' style={{ display: `${homeOpen ? 'flex' : 'none'}` }}></div>
+          
+          <ul className='primary-nav'>
+            <li><NavLink to="/" className='navlink' onClick={toggleHamburger}>HOME</NavLink></li>
+            <li><NavLink to="resume" className='navlink' onClick={toggleHamburger}>FULL RESUMÉ</NavLink></li>
+          </ul>
+        </nav>
+
+        <div className='menuToggle' onClick={toggleHamburger}><FaAlignJustify /></div>
+      </header>
     </>
   )
 }
