@@ -29,6 +29,7 @@ h2 {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 .full-resume-button {
@@ -83,6 +84,7 @@ a {
 .scroll-down-arrow{
   color: white;
   position: absolute;
+  font-size: 2rem;
   bottom: 1rem;
   left: 50%;
 }
@@ -194,13 +196,45 @@ a {
 }
 .footer a {
   color: white;
+  font-size: 2rem;
 }
 .footer a:hover {
     color: #747bff;
 }
 
 
+/******************** FULL RESUME PAGE **********************/
+.full-resume-header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 4rem;
+}
 
+.full-resume-introduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.full-resume-introduction img {
+  margin: 2rem 4rem 0 0;
+}
+.full-resume-ingress p {
+  max-width: 350px;
+}
+
+.full-resume-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.full-resume-line {
+  border: 1px solid black;
+}
+.full-resume-education,
+.full-resume-experience {
+  max-width: 50%;
+}
 
 
 

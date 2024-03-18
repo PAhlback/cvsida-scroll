@@ -10,7 +10,6 @@ const Header = () => {
 
   function toggleHamburger() {
     setHamburgerOpen(!hamburgerOpen)
-    console.log(hamburgerOpen)
   };
 
   return (
@@ -18,14 +17,17 @@ const Header = () => {
         <header className='page-header'>
             <nav className='navbar' style={{display: `${hamburgerOpen ? 'inline' : 'none'}`}}>
                 <ul>
-                    <li><Link to="home" smooth duration={500} className='scroll-link'>HOME</Link></li>
-                    <li><Link to="about" smooth duration={500} className='scroll-link'>ABOUT</Link></li>
-                    <li><Link to="resume" smooth duration={500} className='scroll-link'>RESUMÉ</Link></li>
-                    <li><a href="resume" className='scroll-link'>FULL RESUMÉ</a></li>
-                    <li><Link to="projects" smooth duration={500} className='scroll-link'>PROJECTS</Link></li>
-                    <li><Link to="footer" smooth duration={500} className='scroll-link'>LINKS</Link></li>
+                    <li><NavLink to="/" className='scroll-link'>HOME</NavLink></li>
+                    <li><NavLink to="resume" className='scroll-link'>FULL RESUMÉ</NavLink></li>
+                </ul>
+                <ul>
+                  <li><Link to="about" smooth duration={500} className='scroll-link'>ABOUT</Link></li>
+                  <li><Link to="resume" smooth duration={500} className='scroll-link'>RESUMÉ</Link></li>
+                  <li><Link to="projects" smooth duration={500} className='scroll-link'>PROJECTS</Link></li>
+                  <li><Link to="footer" smooth duration={500} className='scroll-link'>LINKS</Link></li>
                 </ul>
             </nav>
+            
             <div className='hamburger' onClick={ toggleHamburger }><FaAlignJustify /></div>
         </header>
     </>

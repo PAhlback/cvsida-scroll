@@ -20,18 +20,17 @@ const Projects = () => {
             .catch(e => console.log(e))
     }, []);
 
-    
-
   return (
     <section id="projects" className='projects-wrapper'>
         <h2>My Projects</h2>
         <p>These are some of my projects currently up on Github. They are mostly projects made for school.</p>
+        {isLoading ? (
+            <div>Loading...</div>
+        ) : 
+        <>
             <section className='projects'>
                 {
                     githubProjects.map((proj) => {
-                        if(isLoading) {
-                            return <div>Loading...</div>
-                        }
 
                         let date = proj.updated_at;
                         date = formatDate(date);
@@ -48,6 +47,7 @@ const Projects = () => {
                     })
                 }
             </section>
+        </>}
     </section>
   )
 }
