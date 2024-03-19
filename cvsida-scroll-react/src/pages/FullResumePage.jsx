@@ -4,6 +4,8 @@ import ProfilePicture from '../assets/images/Pontus-rounded-profile.png'
 import FullExperienceCard from '../components/FullExperienceCard'
 import FullEducationCard from '../components/FullEducationCard'
 
+import ResumePDF from '../data/PontusAhlbäckResumé.pdf'
+
 const FullResumePage = () => {
   return (
     <>
@@ -15,7 +17,10 @@ const FullResumePage = () => {
             <p>
               This is my full resume. If you wish to download the resume click the button below.
             </p>
-            <a href="resume" className='full-resume-button'><h6>Download resumé</h6></a>
+            <p>
+              Feel free to contact me via linkedin (link in footer), or via email: pontus.ahlback@chasacademy.se
+            </p>
+            <a href={ResumePDF} download="Pontus Ahlbäck Resumé" target="_blank" rel="noreferrer" className='full-resume-button' ><h6>Download resumé</h6></a>
           </div>
         </article>
       </section>

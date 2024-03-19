@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaArrowRight } from "react-icons/fa6";
 
 import ExperienceCard from './ExperienceCard'
 import EducationCard from './EducationCard'
@@ -7,17 +8,16 @@ const Resume = () => {
   return (
     <>
       <section id='resume' className='resume experience'>
-          <h2>RESUMÉ</h2>
-          <h3>EXPERIENCE</h3>
-          <a href="resume" className='full-resume-button'><h6>Click here for my full resumé</h6></a>
+          <h2 className='short-resume-header'>RESUMÉ</h2>
+          <a href="resume" className='full-resume-button'><h6>Full resumé <FaArrowRight className='button-arrow'/></h6></a>
+          <h3 className='resume-sub-title'>EXPERIENCE</h3>
           <section className='work-experience'>
             <ExperienceCard />
           </section>
       </section>
 
       <section className='resume education'>
-        <h3>EDUCATION</h3>
-        <a href="resume" className='full-resume-button'><h6>Click here for my full resumé</h6></a>
+        <h3 className='resume-sub-title'>EDUCATION</h3>
         <section className='work-experience education-cards'>
           <EducationCard />
         </section>

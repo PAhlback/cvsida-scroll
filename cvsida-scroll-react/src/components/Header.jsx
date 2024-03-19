@@ -28,7 +28,7 @@ const Header = () => {
       <header className='page-header'>
         <nav className='navbar' style={{ display: `${hamburgerOpen ? 'flex' : 'none'}` }}>
           <ul className='secondary-nav' style={{ display: `${homeOpen ? 'flex' : 'none'}` }}>
-            <li><Link to="home" smooth duration={500} className='scroll-link'><FaAnglesUp /></Link></li>
+            <li><Link to="home" smooth duration={500} className='scroll-link' onClick={toggleHamburger}><FaAnglesUp /></Link></li>
             <li><Link to="about" smooth duration={500} className='scroll-link' onClick={toggleHamburger}>ABOUT</Link></li>
             <li><Link to="resume" smooth duration={500} className='scroll-link' onClick={toggleHamburger}>RESUMÉ</Link></li>
             <li><Link to="projects" smooth duration={500} className='scroll-link' onClick={toggleHamburger}>PROJECTS</Link></li>
@@ -43,8 +43,8 @@ const Header = () => {
           </ul>
         </nav>
 
-        <div className='menuToggle' onClick={toggleHamburger}><FaAlignJustify /></div>
       </header>
+      <div className='menuToggle' onClick={toggleHamburger}><FaAlignJustify /></div>
     </>
   )
 }

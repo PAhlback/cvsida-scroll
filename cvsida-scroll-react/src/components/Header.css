@@ -2,12 +2,10 @@
     position: fixed;
     display: flex;
     top: 1rem;
-    right: 2.5rem;
-    padding-right: 1rem;
+    right: 5rem;
     align-items: center;
     font-family: inter;
     color: white;
-    height: 3rem;
     border-radius: 10px;
     background-color: #222;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.678);
@@ -25,9 +23,12 @@
 }
 
 .menuToggle {
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
     padding-left: 1rem;
-    color: rgb(255, 255, 255);
-    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
 }
 
 .primary-nav,
@@ -35,6 +36,7 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 0.5rem;
+    height: 3rem;
 }
 .primary-nav .navlink {
     color: white;

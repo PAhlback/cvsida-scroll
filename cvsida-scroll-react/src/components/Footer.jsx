@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaYoutube, FaSoundcloud } from "react-icons/fa6";
 const Footer = () => {
   return (
     <section id='footer' className='footer'>
-        <div>
+        <div className='copyright'>
             <p>
                 Copyright &#169; Pontus Ahlbäck
             </p>

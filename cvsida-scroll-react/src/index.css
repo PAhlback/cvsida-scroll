@@ -33,6 +33,7 @@ a {
 }
 
 .full-resume-button {
+  position: relative;
   margin: 1rem;
   display: flex;
   padding: 1.5rem 2.5rem;
@@ -40,6 +41,7 @@ a {
   align-items: center;
 
   border-radius: 25px;
+  border: 1px solid #afafaf;
   background: linear-gradient(92deg, #0697FF 14.21%, #00D13B 99.74%);
   box-shadow: 3px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
@@ -50,12 +52,20 @@ a {
   font-size: 1.2rem;
   font-weight: 400;
 }
-.full-resume-button:hover h6 {
+/* .full-resume-button:hover h6 {
   font-weight: 600;
-}
+} */
 .full-resume-button:active {
   background: linear-gradient(92deg, #00D13B 15%, #0697FF 70%);
 }
+.button-arrow {
+  padding-top: 5px;
+  transition: margin-left 0.8s;
+}
+.full-resume-button:hover .button-arrow {
+  margin-left: 1rem;
+}
+
 
 /******************** INTRODUCTION **********************/
 .hero-image {
@@ -74,7 +84,8 @@ a {
 .introduction h1 {
   font-size: 2rem;
   text-shadow: 2px 2px 4px black;
-  font-weight: 600;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .introduction p {
   width: 21vw;
@@ -145,6 +156,9 @@ a {
 .projects-wrapper h2 {
   padding-top: 2rem;
 }
+.projects-introduction {
+  margin: 0 1rem;
+}
 
 .projects {
   display: flex;
@@ -172,6 +186,10 @@ a {
 .project-card-image {
   width: 100%;
   padding: 1rem;
+}
+
+.loading-projects {
+  padding-top: 10rem;
 }
 
 /******************** FOOTER **********************/
@@ -227,9 +245,11 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin: 0 10%;
 }
 .full-resume-line {
   border: 1px solid black;
+  margin: 0 1rem;
 }
 .full-resume-education,
 .full-resume-experience {

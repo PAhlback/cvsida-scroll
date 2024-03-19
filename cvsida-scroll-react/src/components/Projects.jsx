@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import BounceLoader from 'react-spinners/BounceLoader';
 
 const formatDate = (date) => {
     const options = { month: 'long', day: 'numeric', year: 'numeric' };
@@ -23,9 +24,9 @@ const Projects = () => {
   return (
     <section id="projects" className='projects-wrapper'>
         <h2>My Projects</h2>
-        <p>These are some of my projects currently up on Github. They are mostly projects made for school.</p>
+        <p className='projects-introduction'>These are some of my projects currently up on Github. They are mostly projects made for school.</p>
         {isLoading ? (
-            <div>Loading...</div>
+            <div className='loading-projects'><BounceLoader color="#36d7b7" /></div>
         ) : 
         <>
             <section className='projects'>
