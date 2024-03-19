@@ -1,9 +1,9 @@
 import React from 'react'
 
 import Introduction from '../components/Introduction'
-import About from '../components/About'
-import Resume from '../components/Resume'
-import Projects from '../components/Projects'
+import About from '../components/About.jsx'
+import Resume from '../components/Resume.jsx'
+import Projects from '../components/Projects.jsx'
 
 const HomePage = () => {
   return (

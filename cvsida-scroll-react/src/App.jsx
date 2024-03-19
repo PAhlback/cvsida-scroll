@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import Layout from './pages/Layout'
-import HomePage from './pages/HomePage'
-import FullResumePage from './pages/FullResumePage'
+import Layout from './pages/Layout.jsx'
+import HomePage from './pages/HomePage.jsx'
+import FullResumePage from './pages/FullResumePage.jsx'
 
 function App() {
   return (

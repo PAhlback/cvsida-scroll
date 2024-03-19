@@ -1,8 +1,8 @@
 import React from 'react'
 
 import ProfilePicture from '../assets/images/Pontus-rounded-profile.png'
-import FullExperienceCard from '../components/FullExperienceCard'
-import FullEducationCard from '../components/FullEducationCard'
+import FullExperienceCard from '../components/FullExperienceCard.jsx'
+import FullEducationCard from '../components/FullEducationCard.jsx'
 
 import ResumePDF from '../data/PontusAhlbäckResumé.pdf'
 

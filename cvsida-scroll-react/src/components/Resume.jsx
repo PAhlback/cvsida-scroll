@@ -1,8 +1,8 @@
 import React from 'react'
 import { FaArrowRight } from "react-icons/fa6";
 
-import ExperienceCard from './ExperienceCard'
-import EducationCard from './EducationCard'
+import ExperienceCard from './ExperienceCard.jsx'
+import EducationCard from './EducationCard.jsx'
 
 const Resume = () => {
   return (
